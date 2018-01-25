@@ -1,4 +1,5 @@
-<?php
+<?php use App\Interf\CutterInterface;
+
 class Deve implements CutterInterface
 {
     public function cut(): string
@@ -6,4 +7,3 @@ class Deve implements CutterInterface
         return 'Deve kesildi..';
     }
 }
-?>

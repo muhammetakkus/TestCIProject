@@ -1,4 +1,5 @@
-<?php
+<?php namespace App\Factory;
+
 abstract class CutFactory
 {
     public function cutting(string $kurban)
@@ -6,4 +7,3 @@ abstract class CutFactory
         return (new $kurban());
     }
 }
-?>

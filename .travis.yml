@@ -1,0 +1,12 @@
+language: php
+sudo: required
+php:
+  - 7.2
+dist: art
+before_script:
+ - php composer.phar update
+script:
+ - ./vendor/bin/phpunit
+
+ /* Google Cloud Platform - Travis - PHP */
+ /* Google Cloud Platform - DOCKER - Travis - PHP */
