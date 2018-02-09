@@ -1,5 +1,5 @@
 <?php namespace App;
-// etetetetet
+
 use App\Factory\CutFactory;
 
 class Event extends CutFactory
