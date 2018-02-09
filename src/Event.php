@@ -12,4 +12,3 @@ class Event extends CutFactory
         return parent::cutting($kurban);
     }
 }
-// test
