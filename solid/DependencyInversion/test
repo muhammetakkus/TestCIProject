@@ -1,0 +1,34 @@
+<?php namespace Solid\DependencyInversion;
+
+/* Bağımlılığın tersine dönmesi?  Yani somut sınıflara olan bağımlılıkları, soyutlayarak ortadan kaldırılmasıdır. */
+
+/* Dependency Inversion, sistemin daha yüksek seviyeli işleri kütüphanelere ayırarak ve arayüzleri kullanarak alt
+	seviye classlardan ayıran özel bir Decoupling(ayrıştırma) biçimidir. */
+
+	/* IoC (Inversion of Control) daha genel bir decoupling terimidir. DependencyInjection ve DependencyInversion
+		bir IoC gerçeklemesidir diyebilir miyiz? */
+		
+		/* Bu terimler benzer şeylere işaret ettiği için karışıklık oluşturuyor. 
+			Fakat bu terimlerin bağımsız bir şekilde isimlendirildiği gözden kaçırılmamalıdır. 
+			Sonuç olarak hepsi benzer bir yaklaşımla loose coupling hedefler. */
+
+
+/* IoC Container - Nesneleri soyut sınıflara bağlı tutarak otomatik olarak bağımlılığı enjekte eder
+	Sanırım bu kalıp DependencyInvercion Principle'ın design pattern hali? */
+
+/* DI Container - Nesnelerin bağımlılığını otomatik olarak nesnelere veren/inject yapı - sanırım IoC Container'dan uzak bir şey değil ve yaklaşık olarak şuna benzer bir kullanım oluşacak */
+
+/* mysqli database'in bağımlılığı ise DIC ile database'in bağımlılığını vereilim ve kullanırken DIC'dan sadece 
+   database'i çağralım 
+$dic = new DIC();
+$dic->register('mysqli', function() {
+    return new mysqli('somehost','username','password');
+});
+$dic->register('database', function() use($dic) {
+    return new Database($dic->resolve('mysqli'));
+});
+Notice we're telling our container to grab an instance of mysqli from itself to assemble an instance of Database. Then to get a Database instance with its dependency automatically injected, we would simply:
+
+$database = $dic->resolve('database');
+*/
+class 

@@ -1,0 +1,7 @@
+<?php namespace Solid\InterfaceSegregation;
+
+/* 
+ Genel amaca hizmet eden tek bir arayüz yapmak yerine, istemciye uygun farklı farklı arayüzler yapmak daha iyidir. Yani bir sınıf, bir interface’den türerken sadece kendi işine yarayacak metodları almalıdır.
+ */
+
+ class

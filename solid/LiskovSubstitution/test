@@ -1,0 +1,5 @@
+<?php namespace Solid\LiskovSubstitution;
+
+/* Alt sınıf (türeyen sınıf - sub class), üst sınıfın (base class) yerini alabilecek şekilde olmalıdır.  */
+
+class TestLiskov
